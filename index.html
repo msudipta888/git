@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background-color: #e9f4ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        
+        footer {
+            background-color: #666;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple Website</h1>
+        <p>Learning Git Rebase with HTML</p>
+    </header>
+    
+    <div class="content">
+        <h2>About This Project</h2>
+        <p>This is a simple HTML project created to demonstrate Git rebase workflow. We'll be making changes on different branches and then using rebase to maintain a clean commit history.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>Clean Code</h3>
+                <p>Well-structured HTML and CSS</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Responsive Design</h3>
+                <p>Works on all device sizes</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Modern Styling</h3>
+                <p>Clean and professional appearance</p>
+            </div>
+        </div>
+        
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message"></p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Git Rebase Learning Project</p>
+    </footer>
+    
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerHTML = '<strong>Hello! You clicked the button!</strong>';
+        }
+    </script>
+</body>
+</html>
